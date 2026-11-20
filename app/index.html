@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome</h2>
+        <p class="general">Please log in to access the content.</p>
+        
+        <div id="greeting" class="general" style="margin: 20px 0; padding: 15px; text-align: center;">
+            <strong>Server Greeting:</strong> <span id="greetingText">Loading...</span>
+        </div>
+        
+        <button id="btnGoLogin" onclick="window.location.href='login.html'">Go to Login</button>
+        <button id="btnUnique" onclick="window.location.href='http://localhost:82/unique.html'" style="margin-top: 10px; background-color: #9b59b6;">Unique Elements (Node.js)</button>
+    </div>
+</body>
+</html>

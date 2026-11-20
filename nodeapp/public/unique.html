@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Elements Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unique Elements Finder</h1>
+        <p class="description">Enter numbers separated by commas (e.g., 1,4,3,4,4,7,0,9,3)</p>
+        
+        <div class="input-group">
+            <input type="text" id="numbersInput" placeholder="Enter numbers separated by commas" />
+            <button id="btnFindUnique">Find Unique Elements</button>
+        </div>
+
+        <div id="error" class="error-message hidden"></div>
+
+        <div class="result-section">
+            <h2>Result</h2>
+            <div id="originalArray" class="array-display">
+                <strong>Original:</strong> <span id="originalValues">-</span>
+            </div>
+            <div id="uniqueArray" class="array-display hidden">
+                <strong>Unique:</strong> <span id="uniqueValues">-</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

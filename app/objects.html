@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Objects - Person, Lecturer, Student</title>
+    <link rel="stylesheet" href="objects.css">
+    <script src="objects.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise 3: Objects & Inheritance</h1>
+
+        <section class="demo-section">
+            <h2>Part 1: Basic Person Object</h2>
+            <button id="btnDemoPerson" class="demo-btn">Create Person Object & Log to Console</button>
+            <div id="personOutput" class="output-box hidden"></div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Part 2: Lecturer & Student Forms</h2>
+            
+            <div class="form-section">
+                <h3>Add Lecturer</h3>
+                <form id="lecturerForm">
+                    <div class="form-row">
+                        <label for="lecName">Name:</label>
+                        <input type="text" id="lecName" required placeholder="e.g., Mark Dixon">
+                    </div>
+                    <div class="form-row">
+                        <label for="lecEmail">Email:</label>
+                        <input type="email" id="lecEmail" required placeholder="e.g., mark.dixon@plymouth.ac.uk">
+                    </div>
+                    <div class="form-row">
+                        <label for="lecOffice">Office:</label>
+                        <input type="text" id="lecOffice" required placeholder="e.g., PSQ A319">
+                    </div>
+                    <button type="submit" class="demo-btn">Add Lecturer</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h3>Add Student</h3>
+                <form id="studentForm">
+                    <div class="form-row">
+                        <label for="stuName">Name:</label>
+                        <input type="text" id="stuName" required placeholder="e.g., Jane Smith">
+                    </div>
+                    <div class="form-row">
+                        <label for="stuEmail">Email:</label>
+                        <input type="email" id="stuEmail" required placeholder="e.g., jane.smith@students.plymouth.ac.uk">
+                    </div>
+                    <div class="form-row">
+                        <label for="stuNumber">Student Number:</label>
+                        <input type="text" id="stuNumber" required placeholder="e.g., 1234567">
+                    </div>
+                    <button type="submit" class="demo-btn">Add Student</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>Part 3: Display Tables</h2>
+            
+            <div class="table-section">
+                <h3>Lecturers</h3>
+                <table id="lecturerTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Office</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <h3>Students</h3>
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Student Number</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

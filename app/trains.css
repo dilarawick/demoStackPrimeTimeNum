@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+thead {
+    background-color: blue;
+    color: white;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody {
+    background-color: black;
+}
+
+td {
+    color: white;
+}
+
+td.destination {
+    color: yellow;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 20%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 60%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 20%;
+}

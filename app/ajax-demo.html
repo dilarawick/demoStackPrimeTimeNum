@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax Container Communication Demo</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="ajax-demo.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Exercise 1: Connecting Containers with Ajax</h2>
+        
+        <div class="demo-section">
+            <h3>1. Fetch Greeting (GET request)</h3>
+            <button id="btnGreeting" class="demo-btn">Get Greeting from Node.js</button>
+            <div id="greetingResult" class="result-box hidden"></div>
+        </div>
+
+        <div class="demo-section">
+            <h3>2. Get Random Number (GET request)</h3>
+            <button id="btnRandom" class="demo-btn">Get Random Number from Node.js</button>
+            <div id="randomResult" class="result-box hidden"></div>
+        </div>
+
+        <div class="demo-section">
+            <h3>3. Get Customer Data (GET request - JSON array)</h3>
+            <button id="btnCustomers" class="demo-btn">Get Customers from Node.js</button>
+            <div id="customersResult" class="result-box hidden"></div>
+        </div>
+
+        <div class="demo-section">
+            <h3>4. Find Unique Elements (POST request with JSON)</h3>
+            <input type="text" id="numbersInput" placeholder="Enter numbers: 1,4,3,4,4,7,0,9,3" style="width: 100%; padding: 10px; margin-bottom: 10px; font-size: 16px;" />
+            <button id="btnUnique" class="demo-btn">Find Unique (POST to Node.js)</button>
+            <div id="uniqueResult" class="result-box hidden"></div>
+        </div>
+
+        <div class="demo-section">
+            <h3>5. Server Time (GET request)</h3>
+            <button id="btnTime" class="demo-btn">Get Server Time from Node.js</button>
+            <div id="timeResult" class="result-box hidden"></div>
+        </div>
+    </div>
+</body>
+</html>
